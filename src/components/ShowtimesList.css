@@ -1,0 +1,63 @@
+.showtimes-list {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.showtimes-list h4 {
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 1.4em;
+}
+
+.date-selector, .time-selector {
+  margin-bottom: 25px;
+}
+
+.date-buttons, .time-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.date-button, .time-button {
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.date-button:hover, .time-button:hover {
+  background-color: #e0e0e0;
+  border-color: #aaa;
+}
+
+.date-button.selected, .time-button.selected {
+  background-color: #61dafb;
+  border-color: #61dafb;
+  color: #282c34;
+  font-weight: bold;
+}
+
+.proceed-booking-button {
+  display: block;
+  width: 100%;
+  margin-top: 30px;
+  padding: 15px 20px;
+  font-size: 1.2em;
+  background-color: #4CAF50; /* Green color for proceed */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.proceed-booking-button:hover {
+  background-color: #45a049;
+}
