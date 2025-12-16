@@ -1,0 +1,92 @@
+.seat-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 600px; /* Adjust based on your desired grid size */
+  margin: 0 auto;
+}
+
+.screen-indicator {
+  width: 80%;
+  height: 40px;
+  background-color: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 1.1em;
+  letter-spacing: 2px;
+}
+
+.seats-grid {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr); /* 10 seats per row */
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.seat {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9em;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+  background-color: #e0e0e0; /* Default: Available */
+}
+
+.seat.occupied {
+  background-color: #ccc;
+  border-color: #aaa;
+  cursor: not-allowed;
+  color: #666;
+}
+
+.seat.selected {
+  background-color: #61dafb;
+  border-color: #61dafb;
+  color: #282c34;
+  font-weight: bold;
+}
+
+.seat:not(.occupied):hover {
+  background-color: #c0e0f0;
+  border-color: #a0d0e0;
+}
+
+.seat-legend {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.legend-item span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+
+.seat-available + .legend-item {
+  /* Styles for available legend swatch */
+}
+.seat-available { background-color: #e0e0e0; border-color: #ccc; }
+.seat-selected { background-color: #61dafb; border-color: #61dafb; }
+.seat-occupied { background-color: #ccc; border-color: #aaa; }
