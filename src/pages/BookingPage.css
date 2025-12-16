@@ -1,0 +1,61 @@
+.booking-page {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.booking-page h2 {
+  color: #282c34;
+  margin-bottom: 25px;
+  font-size: 2.2em;
+}
+
+.seat-selection-area {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.seat-selection-area h3 {
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.seat-layout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.confirm-booking-button {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  margin: 30px auto 10px auto;
+  padding: 15px 20px;
+  font-size: 1.2em;
+  background-color: #4CAF50; /* Green color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.confirm-booking-button:hover {
+  background-color: #45a049;
+}
+
+.confirm-booking-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
